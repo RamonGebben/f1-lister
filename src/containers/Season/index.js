@@ -54,7 +54,7 @@ export class Season extends Component {
         <BackButton
           to="/"
         >
-          ← Back
+          Back
         </BackButton>
         <Header>
           <h1>
