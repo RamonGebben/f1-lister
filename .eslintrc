@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "implicit-arrow-linebreak": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [ ".js", ".jsx" ] }],
+    "max-len": ["error", 120, 4, { "ignoreUrls": true }],
+    "import/no-named-as-default": 0
+  }
+}
