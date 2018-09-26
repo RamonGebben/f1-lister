@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
 } from 'react-router-dom';
 
@@ -14,12 +14,12 @@ const store = configureStore({});
 
 const App = () => (
   <Provider store={store}>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Route path="/" component={Home} exact />
         <Route path="/seasons/:season" component={Season} exact />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 
